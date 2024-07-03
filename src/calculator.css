@@ -1,0 +1,107 @@
+body {
+  background-color: var(--color-white);
+}
+.nav-container h1 {
+  color: var(--color-black);
+}
+.main-container h2 {
+  color: var(--color-black);
+}
+.main-container button {
+  width: 70px;
+  height: 70px;
+  padding: 34px;
+  background-color: var(--color-cal);
+  color: var(--color-black);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.mode-button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.main-container .row > h2 {
+  font-size: clamp(2em, 4vw, 3em);
+}
+.main-container button:hover {
+  border-radius: 99px;
+}
+.main-container button:active {
+  transform: scale(0.9);
+}
+
+.result,
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-container {
+  flex: 1 300px !important;
+}
+.user-container,
+.num-container {
+  flex: 1;
+}
+.btnsign {
+  font-size: 1.25em;
+}
+.calculatebtn {
+  background: var(--color-black) !important;
+  color: var(--color-cal) !important;
+}
+
+.num-container .btnSpread {
+  width: 124px;
+}
+.num-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.show-result {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.user-container input:focus {
+  outline: none;
+}
+.user-container input,
+.user-container .show-result {
+  color: var(--color-black);
+  border-radius: 8px;
+  border: 1px solid #d9d9d99f;
+  border-bottom: 1px solid var(--color-black);
+  padding: 28px;
+  width: 360px;
+  height: 40px !important;
+  font-family: var(--font-button);
+  background-color: var(--color-white);
+}
+
+.user-container input {
+  font-family: var(--font-button);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: var(--color-black);
+  font-family: var(--font-button);
+  opacity: 0.65;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: bold;
+}
